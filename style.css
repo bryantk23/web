@@ -103,7 +103,7 @@ body {
     z-index: 1000;
     mix-blend-mode: difference;
     backdrop-filter: blur(3px);
-    mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+    
 }
 
 .navbar a {
