@@ -101,8 +101,7 @@ body {
         
     width: 100%;
     z-index: 1000;
-    mix-blend-mode: difference;
-    backdrop-filter: blur(3px);
+    background-color: gray;
     
 }
 
