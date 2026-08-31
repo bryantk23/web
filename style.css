@@ -689,7 +689,7 @@ body {
     }
 
     .all-images-container {
-        display: flex;
+        display: none;
         /*position: absolute; top: 100%; left: 0%;*/
         width: 100%;
         height: fit-content;
