@@ -1,4 +1,4 @@
-﻿/*body { background-color: red !important; }*/
+
 
 html {
     
@@ -74,58 +74,57 @@ body {
 }
 
 
-
+/* For screens larger than a phone */
 @media (min-width: 1000px)
 {
+    .navbar li {
+        width: fit-content;
+        border-bottom: 2px solid white;
+        padding: 5px 5px;
+    
+    }
 
+    .navbar a:hover {
+        transition: transform 0.3s ease-in-out;
+    
+        transform: scale(1.1);
+        cursor: pointer;
+    }
 
-	.navbar li {
-	    width: fit-content;
-	    border-bottom: 2px solid white;
-	    padding: 5px 5px;
-	    
-	}
-	
-	.navbar a:hover {
-	    transition: transform 0.3s ease-in-out;
-	    
-	    transform: scale(1.1);
-	    cursor: pointer;
-	}
-	
-	.navbar {
-	    
-	    
-	    display: flex;
-	    text-align: center;
-	    justify-content: center;
-	    align-items: center;
-	    margin: 0;
-	    padding: 10px 10px;
-	    font-size: 20px;
-	    position: fixed; 
-	    top: 0;
-	        
-	    width: 100%;
-	    z-index: 1000;
-	    filter: blur(5px);
-	    
-	}
-	
-	.navbar a {
-	    display: inline-block;
-	    color: white;
-	    text-align: center;
-	    padding: 10px 12px;
-	    text-decoration: none;
-	    
-	    
-	    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-	    
-	    
-	    
-	}
-	
+    .navbar {
+    
+    
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 10px 10px;
+        font-size: 20px;
+        position: fixed; 
+        top: 0;
+        
+        width: 100%;
+        z-index: 1000;
+        mix-blend-mode: difference;
+        backdrop-filter: blur(3px);
+        mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+    
+    }
+
+    .navbar a {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 10px 12px;
+        text-decoration: none;
+    
+    
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    
+    
+    
+    }
     .fig-image {
         justify-content: center;
         align-items: center;
@@ -158,7 +157,7 @@ body {
         column-count: 5;       /* Defines max columns */
         column-width: 250px;   /* Breaks down responsively on smaller screens */
         column-gap: 10px; 
-    
+        
 
     
     
@@ -624,6 +623,52 @@ body {
         margin-bottom: 2px;
     }
     
+    .navbar li {
+    width: fit-content;
+    border-bottom: 2px solid white;
+    padding: 5px 5px;
+    
+}
+
+.navbar a:hover {
+    transition: transform 0.3s ease-in-out;
+    
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.navbar {
+    
+    
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 10px 10px;
+        font-size: 20px;
+        position: fixed; 
+        top: 0;
+        
+        width: 100%;
+        z-index: 1000;
+        background-color: gray;
+    
+    }
+
+    .navbar a {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 10px 12px;
+        text-decoration: none;
+    
+    
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    
+    
+    
+    }
 
 }
 
@@ -669,54 +714,6 @@ body {
 /* for screen sizes less than a laptop */
 @media (max-width: 1000px){
 
-
-	.navbar li {
-	    width: fit-content;
-	    border-bottom: 2px solid white;
-	    padding: 5px 5px;
-	    
-	}
-	
-	.navbar a:hover {
-	    transition: transform 0.3s ease-in-out;
-	    
-	    transform: scale(1.1);
-	    cursor: pointer;
-	}
-	
-	.navbar {
-	    
-	    
-	    display: flex;
-	    text-align: center;
-	    justify-content: center;
-	    align-items: center;
-	    margin: 0;
-	    padding: 10px 10px;
-	    font-size: 20px;
-	    position: fixed; 
-	    top: 0;
-	        
-	    width: 100%;
-	    z-index: 1000;
-	    background-color: gray;
-	    
-	}
-	
-	.navbar a {
-	    display: inline-block;
-	    color: white;
-	    text-align: center;
-	    padding: 10px 12px;
-	    text-decoration: none;
-	    
-	    
-	    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-	    
-	    
-	    
-	}
-	
     .navbar {
         font-size: 2vw;
         
@@ -729,7 +726,7 @@ body {
         justify-content: center;
         align-items: center;
         object-fit: cover;
-        height: fit-content;
+        height: auto;
         width: 100%;
         align-items: center;
         justify-content: center;
@@ -739,10 +736,10 @@ body {
     }
 
     .all-images-container {
-        display: none;
+        display: flex; /* No picture library cause optimization to mobile is too difficult, can change later */
         /*position: absolute; top: 100%; left: 0%;*/
         width: 100%;
-        height: fit-content;
+        height: auto;
     
         z-index: 0;
         padding-bottom: 10%;
@@ -866,7 +863,7 @@ body {
     }
     .profile-links {
         width: 100%;
-		height: 20%;
+        height: 20%;
         display: flex;
         text-align: center;
         justify-content: right;
@@ -875,7 +872,7 @@ body {
     }
     .profile-links img{
         width: 50%;
-        height: fit-content;
+        height: auto;
     }
     .profile-links a{
         width: 10%;
