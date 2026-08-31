@@ -72,57 +72,60 @@ body {
     background-color: var(--background-color);
 
 }
-.navbar li {
-    width: fit-content;
-    border-bottom: 2px solid white;
-    padding: 5px 5px;
-    
-}
 
-.navbar a:hover {
-    transition: transform 0.3s ease-in-out;
-    
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
-.navbar {
-    
-    
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 10px 10px;
-    font-size: 20px;
-    position: fixed; 
-    top: 0;
-        
-    width: 100%;
-    z-index: 1000;
-    background-color: gray;
-    
-}
-
-.navbar a {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 10px 12px;
-    text-decoration: none;
-    
-    
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-    
-    
-    
-}
 
 
 @media (min-width: 1000px)
 {
 
+
+	.navbar li {
+	    width: fit-content;
+	    border-bottom: 2px solid white;
+	    padding: 5px 5px;
+	    
+	}
+	
+	.navbar a:hover {
+	    transition: transform 0.3s ease-in-out;
+	    
+	    transform: scale(1.1);
+	    cursor: pointer;
+	}
+	
+	.navbar {
+	    
+	    
+	    display: flex;
+	    text-align: center;
+	    justify-content: center;
+	    align-items: center;
+	    margin: 0;
+	    padding: 10px 10px;
+	    font-size: 20px;
+	    position: fixed; 
+	    top: 0;
+	        
+	    width: 100%;
+	    z-index: 1000;
+	    filter: blur(5px);
+	    
+	}
+	
+	.navbar a {
+	    display: inline-block;
+	    color: white;
+	    text-align: center;
+	    padding: 10px 12px;
+	    text-decoration: none;
+	    
+	    
+	    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+	    
+	    
+	    
+	}
+	
     .fig-image {
         justify-content: center;
         align-items: center;
@@ -666,6 +669,54 @@ body {
 /* for screen sizes less than a laptop */
 @media (max-width: 1000px){
 
+
+	.navbar li {
+	    width: fit-content;
+	    border-bottom: 2px solid white;
+	    padding: 5px 5px;
+	    
+	}
+	
+	.navbar a:hover {
+	    transition: transform 0.3s ease-in-out;
+	    
+	    transform: scale(1.1);
+	    cursor: pointer;
+	}
+	
+	.navbar {
+	    
+	    
+	    display: flex;
+	    text-align: center;
+	    justify-content: center;
+	    align-items: center;
+	    margin: 0;
+	    padding: 10px 10px;
+	    font-size: 20px;
+	    position: fixed; 
+	    top: 0;
+	        
+	    width: 100%;
+	    z-index: 1000;
+	    background-color: gray;
+	    
+	}
+	
+	.navbar a {
+	    display: inline-block;
+	    color: white;
+	    text-align: center;
+	    padding: 10px 12px;
+	    text-decoration: none;
+	    
+	    
+	    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+	    
+	    
+	    
+	}
+	
     .navbar {
         font-size: 2vw;
         
