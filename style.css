@@ -1,4 +1,4 @@
-
+/*body { background-color: red !important; }*/
 
 html {
     
@@ -848,10 +848,10 @@ body {
     
     #text-container img{
         width: 25%;
-        height: 25%;
+        height: auto;
         float: left;
         border-radius: 50%;
-        border: 2px solid black;
+        border: 2px solid #FFA500;
         shape-outside: circle(50%);
         margin: 10px; 
     }
@@ -939,7 +939,7 @@ body {
         display: flex;
         
         width: 5%;
-        height: fit-content;
+        height: 5%;
     }
     .education-grid {
         gap: 3%;
