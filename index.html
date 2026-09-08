@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -57,10 +57,14 @@
                 acutal snow around me. One of the most difficult hikes I have 
                 ever done, probably because it was extremely cold and I was 
                 very underprepared.</figcaption>
+                <div class="toggle-fig-cap-icon" onclick="toggleCap()">
+                    <i class="fa-solid fa-eye-low-vision"></i>
+                </div>
             </figure>
         
         </div>
 
+        
     
         <div class="all-images-container">
 
@@ -103,7 +107,7 @@
                     <figcaption class="rep-fig-cap">Another picture taken during one of 
                     my trips to Arizona. As you can see, this is a life-like whale 
                     rock (A local treasure). He's name is Whaley and he wants to be an 
-                    astronaute when he grows up.</figcaption>
+                    astronaut when he grows up.</figcaption>
                 </div>
                 <div class="image" onclick="changeImg(this)">
                     <header class="rep-fig-header">Queen Victoria</header>
@@ -111,7 +115,7 @@
                     <figcaption class="rep-fig-cap">Picture of Queen Victoria. The statue 
                     is not made of gold, and I totally knew that. I definitely did not think 
                     it was made of gold when I was there, and not just search it up to find that 
-                    it was made of marble with bronze.
+                    it was made of marble and bronze.
                     </figcaption>
                 </div>
                 <div class="image" onclick="changeImg(this)">
@@ -134,7 +138,7 @@
                     <figcaption class="rep-fig-cap">An overview picture I took just as we rounded the corner of a mountain.</figcaption>
                 </div>
                 <div class="image" onclick="changeImg(this)">
-                    <header class="rep-fig-header">St. James's Park'</header>
+                    <header class="rep-fig-header">St. James's Park</header>
                     <img class="rep-fig-image" src="images/pic8.jpg">
                     <figcaption class="rep-fig-cap">Picture of a black goose I had seen while 
                     walking around St. James's Park. This was my first time seeing one. Saw this 
@@ -183,7 +187,7 @@
                     <img class="rep-fig-image" src="images/pic13.jpg">
                     <figcaption class="rep-fig-cap">Get this . . . A bridge made (drum roll please) of ROCK! Actually it was pretty 
                     cool when I saw this thing. And it might not be rock, or at least doesn't look like it. Might be some kind of 
-                    unknown fosilized substance, woah guys. Not that kind of substance.</figcaption>
+                    unknown fosilized substance.</figcaption>
                 </div>
                 <div class="image" onclick="changeImg(this)">
                     <header class="rep-fig-header">Cave Opening</header>
@@ -242,21 +246,21 @@
                     <header class="rep-fig-header">Cave Path</header>
                     <img class="rep-fig-image" src="images/pic22.jpg">
                     <figcaption class="rep-fig-cap">Stunning image I captured while exploring Plato's cave (if you know, you know). It was a truly 
-                    beautiful experience for me. I just loved the cool and relaxing atomsphere while exploring undergound caverns. I guess thats the 
+                    beautiful experience for me. I just loved the cool and relaxing atmosphere while exploring this undergound cavern. I guess that's the 
                     caveman side of me.</figcaption>
                 </div>
                 <div class="image" onclick="changeImg(this)">
                     <header class="rep-fig-header">Pond</header>
                     <img class="rep-fig-image" src="images/pic23.jpg">
                     <figcaption class="rep-fig-cap">Picture was captured in the same location as the previous cave photos. It was very tempting to 
-                    take a dip in the lake but fairly certain the other hikers would not appreciate that.
+                    take a dip in the lake but I was fairly certain the other hikers would not appreciate that.
                     </figcaption>
                 </div>
                 <div class="image" onclick="changeImg(this)">
                     <header class="rep-fig-header">Corn Maze</header>
                     <img class="rep-fig-image" src="images/pic24.jpg">
                     <figcaption class="rep-fig-cap">Image of a gaint corn maze I had done. They gave everyone a map before they entered because this 
-                    maze was enormous. Since I didn't want this to be too easy for me, I put my map in my backpack and tried for about 2 hours without it. 
+                    maze was enormous. Since I didn't want this to be too easy for me, I put the map in my backpack and tried for about 2 hours without it. 
                     I got absolutely no where, and with it getting dark I brought out the map and my flashlight. I frantically wandered around til I found my way out. 
                     It was a fun experience though, would definitely do again.
                     </figcaption>
@@ -313,7 +317,7 @@
                 development, and much more. More than anything, I love a challenge. I am also very physically active, as I have to stay in fit 
                 condition for my snowboarding adventures. If you can't tell, I am a snowboarding addict. I also love traveling, and the home 
                 section you see near the top of this webpage are filled pictures I've taken of some places I have been lucky to visit. P.S: If you hover (with a mouse)
-                over the enlargened picture at the very top it gives you some info about where it was taken.</p>
+                over the enlargened picture at the very top it gives you some info about where it was taken. Click on the eye icon if on phone.</p>
         
             </div>
             
@@ -557,5 +561,20 @@ function handlesPageUpdate() {
     globalThis.scrollTo(0, 'smooth', 50);
 
 }
+//const toggleDisplay = 
+function toggleCap() {
+    
+    if (document.querySelector('.fig-cap').style.display == 'none')
+    {
+        document.querySelector('.fig-cap').style.display = 'flex';
+        document.querySelector('.fig-header').style.display = 'flex';
+    }
+    else
+    {
+        document.querySelector('.fig-cap').style.display = 'none';
+        document.querySelector('.fig-header').style.display = 'none';
+    }
+}
 
 </script>
+
